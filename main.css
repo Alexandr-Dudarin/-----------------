@@ -89,6 +89,15 @@
     .avatar {
       width: 80px;
     }
+
+    .registr-block{
+      border: 5px solid orangered;
+    }
+  
+    .registr-title {
+      color: wheat;
+    }
+
   }
   
   @media only screen and (min-width: 1240px) {
@@ -108,5 +117,14 @@
     .registr {
       flex-direction: row;
     }
+
+    .registr-block{
+      border: 8px solid rebeccapurple;
+    }
+
+    .registr-title {
+      color: red;
+    }
+  
   }
   
