@@ -1,0 +1,112 @@
+:root {
+    --registr-margin: 20px;
+    --border-color: brown;
+    --background-color: blueviolet;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+  }
+  
+  button {
+    background: rgb(35, 73, 126);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.7s;
+    margin: 10px 0 0 20px;
+  }
+  
+  button:hover {
+    background: rgb(89, 5, 126);
+  }
+  
+  input {
+    display: block;
+    margin: 10px 0 10px 0;
+  }
+  
+  .registr {
+    border: 3px solid var(--border-color);
+    margin: var(--registr-margin);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registr-text {
+    background-color: green;
+    color: black;
+    }
+    
+    .registr-text-message {
+    font-size: 8px;
+    color: red;
+    }
+    
+  
+  .registr-title,
+  .registr-text-message {
+    background-color: black;
+  }
+  
+  .registr-title {
+    color: yellow;
+  }
+  
+  .registr-block{
+    border: 3px solid var(--border-color);
+  }
+  
+  header {
+    background-color: antiquewhite;
+    height: 50px;
+  }
+  
+  .avatar {
+    background-color: blue;
+    width: 50px;
+    height: 100%;
+  }
+  
+  
+  @media only screen and (min-width: 540px) {
+    body{
+      font-size: 24px;
+    }
+  
+    header {
+      height: 80px;
+    }
+    
+    .avatar {
+      width: 80px;
+    }
+  }
+  
+  @media only screen and (min-width: 1240px) {
+    
+    body{
+      font-size: 32px;
+    }
+  
+    header {
+      height: 160px;
+    }
+    
+    .avatar {
+      width: 160px;
+    }
+  
+    .registr {
+      flex-direction: row;
+    }
+  }
+  
