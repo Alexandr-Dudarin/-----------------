@@ -13,6 +13,18 @@
   body {
     margin: 0;
     font-family: "Oswald", sans-serif;
+    animation: color 3s;
+    animation-iteration-count: 4;
+  }
+
+  @keyframes color {
+    from{
+    background-color: white;
+    }
+
+    to{
+    background-color: cadetblue;
+    }
   }
   
   button {
@@ -22,16 +34,27 @@
     border-radius: 8px;
     font-size: 16px;
     transition: 0.7s;
-    margin: 10px 0 0 20px;
+    margin: 20px;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
   }
   
   button:hover {
     background: rgb(89, 5, 126);
+    transform: scale(1.15);
   }
   
   input {
     display: block;
     margin: 10px 0 10px 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  input:focus {
+    background: blueviolet;
+    opacity: 0.4;
   }
   
   .registr {
@@ -98,6 +121,10 @@
       color: wheat;
     }
 
+    button {
+      width: 20%;
+    }
+
   }
   
   @media only screen and (min-width: 1240px) {
@@ -124,6 +151,10 @@
 
     .registr-title {
       color: red;
+    }
+
+        button {
+      width: 20%;
     }
   
   }
