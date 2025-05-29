@@ -18,12 +18,28 @@
   }
 
   @keyframes color {
-    from{
+    0%{
     background-color: white;
     }
 
-    to{
-    background-color: cadetblue;
+    10%{
+background-color: rgb(183, 222, 224);
+    }
+
+    50%{
+      background-color: cadetblue;
+    }
+
+    60%{
+      background-color: rgb(55, 115, 117);
+    }
+
+    90%{
+      background-color: cadetblue;
+    }
+
+    100%{
+    background-color: white;
     }
   }
   
@@ -86,7 +102,13 @@
   
   .registr-block{
     border: 3px solid var(--border-color);
+    transition: 0.5s ease-in-out;
   }
+
+  .registr-block:hover {
+    transform: scale(1.10);
+  }
+
   
   header {
     background-color: antiquewhite;
