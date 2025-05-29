@@ -13,7 +13,7 @@
   body {
     margin: 0;
     font-family: "Oswald", sans-serif;
-    animation: color 3s;
+    animation: color 10s;
     animation-iteration-count: 4;
   }
 
@@ -91,12 +91,73 @@
   header {
     background-color: antiquewhite;
     height: 50px;
+    z-index: -2;
   }
   
   .avatar {
     background-color: blue;
     width: 50px;
     height: 100%;
+    z-index: -2;
+  }
+
+  .cat {
+    width: 8%;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: run 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes run{
+    0%{
+    bottom: 0;
+    left: 0;
+    }
+
+    5%{
+      transform: rotate(270deg);
+    }
+
+    25%{
+    bottom: 100%;
+    left: 0%;
+    transform: rotate(270deg);
+    }
+
+    30%{
+      transform: rotate(360deg);
+    }
+
+    50%{
+    bottom: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%) rotate(360deg);
+    }
+
+    55%{
+      transform: translate(-100%, -100%) rotate(180deg);
+    }
+
+    75%{
+    bottom: 0%;
+    left: 100%;
+    transform: translate(-100%, 0) rotate(180deg);
+    }
+    
+    80%{
+    bottom: 0%;
+    left: 100%;
+    transform: translate(-100%, 0) rotate(360deg);
+    }
+
+    100%{
+    bottom: 0;
+    left: 0;
+    transform: rotate(360deg);
+    }
   }
   
   
